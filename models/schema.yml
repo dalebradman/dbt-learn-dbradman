@@ -1,4 +1,16 @@
 version: 2
+
+sources:
+  - name: stripe
+    database: raw
+    tables:
+      - name: payment
+  - name: jaffle_shop
+    database: raw
+    tables:
+      - name: customers
+      - name: orders
+
 models:
   - name: customers
     description: One record per customer
